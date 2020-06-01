@@ -1,8 +1,5 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-
-const Content = styled.div`
-   
-  `;
+const Content = styled.div``;
 
 export default Content;
