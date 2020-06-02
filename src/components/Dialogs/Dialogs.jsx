@@ -1,6 +1,6 @@
 
 import React from 'react';
-import {Dialog} from './Dialogs.styled'
+import { Dialog } from './Dialogs.styled'
 
 const Dialogs = () => {
     return (
@@ -11,4 +11,4 @@ const Dialogs = () => {
 }
 
 
-export {Dialogs};
+export { Dialogs };

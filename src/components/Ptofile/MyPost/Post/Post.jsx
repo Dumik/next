@@ -8,10 +8,10 @@ const Post = (props) => {
 
 
     <Box>
-      
-      <Avatar  src="https://png.pngtree.com/png-vector/20190704/ourmid/pngtree-vector-user-young-boy-avatar-icon-png-image_1538408.jpg" alt=" ava" />
-            { props.user}
-            <br />
+
+      <Avatar src="https://png.pngtree.com/png-vector/20190704/ourmid/pngtree-vector-user-young-boy-avatar-icon-png-image_1538408.jpg" alt=" ava" />
+      {props.user}
+      <br />
               post 2
       <div>
         <span>like </span>{props.like}
