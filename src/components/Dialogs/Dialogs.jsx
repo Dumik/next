@@ -13,7 +13,7 @@ const DialogItem = (props) => {
 
 const Massege = (props) => {
     return (
-    <div className='masssage'>{props.massege}</div>
+        <div className='masssage'>{props.massege}</div>
     );
 }
 
@@ -29,11 +29,11 @@ const Dialogs = (props) => {
                 <DialogItem name='Jhonny' id='4' />
             </div>
             <div className="massages">
-                <Massege massege=" Hello"/>
-                <Massege massege=" How are you?"/>
-                <Massege massege=" Hello"/>
-                <Massege massege="  I am fine! How are you?"/>
-               
+                <Massege massege=" Hello" />
+                <Massege massege=" How are you?" />
+                <Massege massege=" Hello" />
+                <Massege massege="  I am fine! How are you?" />
+
 
             </div>
         </Dialog>

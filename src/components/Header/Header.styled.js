@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const MainHeader = styled.header`
     grid-area: h;
-    background-color: whitesmoke ;
+    background-color: white;
     border-bottom: 1px solid black;
     
     margin-bottom: 10px ;

@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 const Nav = styled.nav`
   grid-area: n;
-  background-color: whitesmoke;
+  background-color: white;
   box-shadow: 0px 0px 1px black;
   margin-right: 10px;
   

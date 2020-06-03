@@ -9,7 +9,7 @@ const NavBar = () => {
     <Nav>
       <ul>
         <NavLi><LinkElem to="/profile">Profile</LinkElem></NavLi>
-        <NavLi><LinkElem to="/dialogs">Maessages</LinkElem></NavLi>
+        <NavLi><LinkElem to="/dialogs">Masseges</LinkElem></NavLi>
         <NavLi><LinkElem to="/news">News</LinkElem></NavLi>
         <NavLi><LinkElem to="/music">Music</LinkElem></NavLi>
         <NavLi><LinkElem to="/settings">Settings</LinkElem></NavLi>
