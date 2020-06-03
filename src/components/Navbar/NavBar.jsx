@@ -1,20 +1,21 @@
 
 import React from 'react';
-import {Nav} from './NavBar.styled'
+import { Nav, NavLi, LinkElem } from './NavBar.styled'
+import { NavLink } from 'react-router-dom';
 
 
 const NavBar = () => {
-    return (
+  return (
     <Nav>
-        <ul>
-          <li><a href="/profile">Profile</a></li>
-          <li><a href="/dialogs">Maessages</a></li>
-          <li><a href="/news">News</a></li>
-          <li><a href="/music">Music</a></li>
-          <li><a href="/settings">Settings</a></li>
-        </ul>
-      </Nav>
-    );
+      <ul>
+        <NavLi><LinkElem to="/profile">Profile</LinkElem></NavLi>
+        <NavLi><LinkElem to="/dialogs">Maessages</LinkElem></NavLi>
+        <NavLi><LinkElem to="/news">News</LinkElem></NavLi>
+        <NavLi><LinkElem to="/music">Music</LinkElem></NavLi>
+        <NavLi><LinkElem to="/settings">Settings</LinkElem></NavLi>
+      </ul>
+    </Nav>
+  );
 }
 
 export default NavBar;

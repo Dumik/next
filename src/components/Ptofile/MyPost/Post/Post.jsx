@@ -3,6 +3,7 @@ import React from 'react';
 import { Box, Avatar } from './Post.styled';
 
 
+
 const Post = (props) => {
   return (
 
