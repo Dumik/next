@@ -10,6 +10,7 @@ const Dialog = styled.div`
     grid-template-columns: 4fr 10fr;
     padding: 20px;
     background-color: firebrick;
+    border-left: 2px solid black;
   `;
 
 const LinkElem = styled(NavLink) `

@@ -1,5 +1,5 @@
 import styled from "styled-components";
 
-const Content = styled.div``;
+const Box = styled.div``;
 
-export default Content;
+export default Box;
