@@ -33,22 +33,21 @@ let massageData = [
     { massege: "cool", id: "4" },
 ];
 
+let dialogsElements = dialogsData
+    .map(dialog => <DialogItem name={dialog.name} id={dialog.id} />);
+
+let massageElements = massageData
+    .map(massege => <Massege massege={massege.massege} id={massege.id} />)
+
 
 const Dialogs = (props) => {
     return (
         <Dialog>
             <div className="dialogs-item">
-                <DialogItem name={dialogsData[0].name} id={dialogsData[0].id} />
-                <DialogItem name={dialogsData[1].name} id={dialogsData[1].id} />
-                <DialogItem name={dialogsData[2].name} id={dialogsData[2].id} />
-                <DialogItem name={dialogsData[3].name} id={dialogsData[3].id} />
-               
+                {dialogsElements}
             </div>
             <div className="massages">
-                <Massege massege={massageData[0].massege} />
-                <Massege massege={massageData[2].massege} />
-                <Massege massege={massageData[3].massege} />
-                <Massege massege={massageData[4].massege} />
+                {massageElements}
             </div>
         </Dialog>
     )

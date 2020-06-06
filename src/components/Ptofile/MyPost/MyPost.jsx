@@ -6,8 +6,11 @@ import Post from './Post/Post';
 let postData = [
   { id: '0', massege: 'MY FIRST POST!!!!!!!!!!!!', like: '3' },
   { id: '1', massege: 'askldmkalsmdklasmdkl', like: '6' },
-  { id: '2', massege: 'askldmkalsmdklasmdkl', like: '4' },
+  { id: '2', massege: 'dumik.alive@gmail.com', like: '4' },
 ];
+
+let postElements = postData
+    .map( post =>  <Post like={post.like} massege={post.massege} /> );
 
 
 const MyPost = () => {
@@ -20,8 +23,8 @@ const MyPost = () => {
         <button>Add post</button>
             new post
       </div>
-      <Post like={postData[0].like} massege={postData[0].massege} user=' Oleg ' />
-      <Post like={postData[1].like} massege={postData[1].massege} user=' Oleg ' />
+      {postElements}
+     
     </Box>
   );
 }
