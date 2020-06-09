@@ -6,10 +6,12 @@ import ProfileInfo from './ProfileInfo/ProfileInfo';
 
 
 const Profile = (props) => {
+
+  
   return (
     <Content>
       <ProfileInfo />
-      <MyPost />
+      <MyPost posts={props.posts}/>
     </Content>
   );
 }

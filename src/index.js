@@ -1,20 +1,36 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Menu from './App';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Menu />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+let posts = [
+  { id: '0', massege: 'MY FIRST POST!!!!!!!!!!!!', like: '3' },
+  { id: '1', massege: 'askldmkalsmdklasmdkl', like: '6' },
+  { id: '2', massege: 'dumik.alive@gmail.com', like: '4' },
+];
+
+
+let dialogsData = [
+  { name: "Oleg", id: "0" },
+  { name: "Diana", id: "1" },
+  { name: "Alex", id: "2" },
+  { name: "Andre", id: "3" },
+];
+
+let massageData = [
+  { massege: "Hello", id: "0" },
+  { massege: "How are you?", id: "1" },
+  { massege: "Hi, i am fine", id: "2" },
+  { massege: "yo", id: "3" },
+  { massege: "cool", id: "4" },
+];
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App posts={posts} dialogsData={dialogsData} massageData={massageData}/>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
