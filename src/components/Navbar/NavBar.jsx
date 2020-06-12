@@ -1,10 +1,10 @@
-
 import React from 'react';
+
 import { Nav, NavLi, LinkElem } from './NavBar.styled'
+import  BoxFriends  from './Friends/Friends';
 
 
-
-const NavBar = () => {
+const NavBar = (props) => {
   return (
     <Nav>
       <ul>
@@ -13,9 +13,11 @@ const NavBar = () => {
         <NavLi><LinkElem to="/news">News</LinkElem></NavLi>
         <NavLi><LinkElem to="/music">Music</LinkElem></NavLi>
         <NavLi><LinkElem to="/settings">Settings</LinkElem></NavLi>
+        <BoxFriends friends={props.friends}/>
       </ul>
+
     </Nav>
   );
 }
 
-export default NavBar;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+export default NavBar;
